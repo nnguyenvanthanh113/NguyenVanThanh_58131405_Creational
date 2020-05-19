@@ -11,48 +11,17 @@ package bt1;
  */
 public class CTHD {
     String sanPham,soLuong,donGia,chietKhau;
-    public CTHD(Builder builder) {
-        this.sanPham = builder.sanPham;
-        this.soLuong = builder.soLuong;
-        this.donGia = builder.donGia;
-        this.chietKhau = builder.chietKhau;
+
+    public CTHD(String sanPham, String soLuong, String donGia, String chietKhau) {
+        this.sanPham = sanPham;
+        this.soLuong = soLuong;
+        this.donGia = donGia;
+        this.chietKhau = chietKhau;
     }
+
     @Override
     public String toString() {
-        return "Chi tiết hóa đơn{" + "sản phẩm :" + sanPham + ", số lượng :" + soLuong 
-                + ", đơn giá :" + donGia  + ",chiết khấu :" + chietKhau + '}';
+        return "CTHD{" + "sanPham=" + sanPham + ", soLuong=" + soLuong + ", donGia=" + donGia + ", chietKhau=" + chietKhau + '}';
     }
-    public static class Builder
-    {
-        String sanPham,soLuong,donGia,chietKhau;
-        public Builder()
-        {
-            
-        }
-        public Builder addSanPham(String sanPham)
-        {
-            this.sanPham = sanPham;
-            return this;
-        }
-        public Builder addSoLuong(String soLuong)
-        {
-            this.soLuong = soLuong;
-            return this;
-        }
-        public Builder addDonGia(String donGia)
-        {
-            this.donGia = donGia;
-            return this;
-        }
-        public Builder addChietKhau(String chietKhau)
-        {
-            this.chietKhau = chietKhau;
-            return this;
-        }
-        
-        public CTHD build()
-        {
-            return new CTHD(this);
-        }
-    }
+    
 }

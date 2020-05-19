@@ -23,7 +23,7 @@ public class MyStringBuilder {
     
     public static class Builder
     {
-        String str = "MyStringBuilder-";
+        String str = "BT2 : ";
         public Builder()
         {
             

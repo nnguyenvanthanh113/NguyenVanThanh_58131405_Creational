@@ -11,17 +11,7 @@ package bt3;
  */
 public class Rectangle extends Shape{
 
-    private static Rectangle instance;
-    protected Rectangle()
-    {
-        
-    }
-    public static Rectangle createInstance()
-    {
-        if(instance == null)
-            instance = new Rectangle();
-        return instance; 
-    }
+    
     @Override
     public String addDraw() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

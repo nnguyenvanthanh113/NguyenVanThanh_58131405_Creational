@@ -20,23 +20,12 @@ public class BT2Main {
         //addString
         MyStringBuilder myStringBuilder1 = new MyStringBuilder.Builder()
                 .addString("addString")
+                .addFloat(22f)
+                .addBool(true)
                 .build();
         
         System.out.println(myStringBuilder1.toString());
         
-        //addFloat
-        MyStringBuilder myStringBuilder2 = new MyStringBuilder.Builder()
-                .addFloat(22f)
-                .build();
-        
-        System.out.println(myStringBuilder2.toString());
-        
-        //addBoolean
-        MyStringBuilder myStringBuilder3 = new MyStringBuilder.Builder()
-                .addBool(true)
-                .build();
-        
-        System.out.println(myStringBuilder3.toString());
     }
     
 }

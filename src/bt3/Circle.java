@@ -11,17 +11,7 @@ package bt3;
  */
 public class Circle extends Shape{
 
-    private static Circle  instance;
-    protected Circle()
-    {
-        
-    }
-    public static Circle createInstance()
-    {
-        if(instance == null)
-            instance = new Circle();
-        return instance; 
-    }
+    
     @Override
     public String addDraw() {
         //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

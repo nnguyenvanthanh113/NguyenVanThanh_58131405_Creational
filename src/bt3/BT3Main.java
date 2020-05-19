@@ -16,6 +16,20 @@ public class BT3Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        //ve hinh chu nhat
+        Shape shapeHCNhat = ShapeFactory.createInstance().CreateShape(ShapeType.retangle);
+        System.out.println(shapeHCNhat.toString());
+        
+        //ve hình tròn
+        Shape shapeHTron = ShapeFactory.createInstance().CreateShape(ShapeType.circle);
+        System.out.println(shapeHTron.toString());
+        
+        //ve hinh tam giac
+        Shape shapeTamGiac = ShapeFactory.createInstance().CreateShape(ShapeType.traingle);
+        System.out.println(shapeTamGiac.toString());
+        
+        
     }
     
 }

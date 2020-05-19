@@ -9,7 +9,31 @@ package bt3;
  *
  * @author ThanhMickey
  */
-public abstract class ShapeFactory {
-    protected abstract Shape createShape(ShapeType shapeType);
+public class ShapeFactory {
     
+    private static ShapeFactory instance;
+
+    public ShapeFactory() {
+    }
+    
+    public static ShapeFactory createInstance()
+    {
+        if(instance == null)
+            instance = new ShapeFactory();
+        return instance; 
+    }
+    
+    public Shape CreateShape(ShapeType shapeType)
+    {
+        switch(shapeType)
+        {
+            case retangle:
+                return new Rectangle();
+            case circle:
+                return new Circle();
+            case traingle:
+                return new Traingle();
+        }
+        return null;
+    }
 }
